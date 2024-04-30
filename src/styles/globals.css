@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
 :root {
   --background-color: #fff;
   --footer-background-color: #000;
@@ -7,6 +9,7 @@
   --sub-width: 1280px;
   --button-radius: 15px;
   --textArea-radius: 8px;
+  --About-Works-Font: "Istok Web", sans-serif;
 
   /* --max-width: 1100px;
   --border-radius: 12px;
