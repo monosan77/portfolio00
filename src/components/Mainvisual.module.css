@@ -8,8 +8,10 @@
   justify-content: center;
   position: relative;
 }
-.container {
-}
+/* #active.container {
+  width: 100px;
+  height: 60px;
+} */
 .image {
   width: 500px;
   border-radius: 50%;
@@ -20,6 +22,7 @@
   transform: translate(-50%, -50%);
   animation: fade 2s linear 2.3s forwards;
 }
+
 .box {
   width: 500px;
   height: 500px;
@@ -48,6 +51,7 @@
   stroke-dashoffset: 0;
   animation: textanimation 2s linear 0s forwards;
 }
+
 .textArea {
   position: absolute;
   bottom: 35%;
@@ -61,6 +65,7 @@
   opacity: 0;
   animation: textfade 2s linear 2.3s forwards;
 }
+
 @keyframes textanimation {
   0% {
     stroke-dashoffset: 750;

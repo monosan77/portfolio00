@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./Mainvisual.module.css";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export function Mainvisual() {
+  // const router = useRouter();
   return (
     <div className={styles.mainvisual}>
       <div className={styles.container}>
