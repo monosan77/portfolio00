@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./Footer.module.css";
 import { init, send } from "@emailjs/browser";
+
 export function Footer() {
   const [name, setName] = useState(""); // 「ご氏名」の部分
   const [company, setCompany] = useState(""); // 「会社名」の部分
