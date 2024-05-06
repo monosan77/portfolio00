@@ -1,8 +1,9 @@
 import Head from "next/head";
-import { Header } from "@/components/Header";
-import { Mainvisual } from "@/components/Mainvisual";
-import { MainContents } from "@/components/MainContents";
-import { Footer } from "@/components/Footer";
+import { Header } from "@/components/Header/Header";
+import { Mainvisual } from "@/components/Main/Mainvisual/Mainvisual";
+import { MainContents } from "@/components/Main/MainContents/MainContents";
+import { Footer } from "@/components/Footer/Footer";
+import { Main } from "@/components/Main/Main";
 
 export default function Home() {
   return (
@@ -14,8 +15,7 @@ export default function Home() {
       </Head>
 
       <Header />
-      <Mainvisual />
-      <MainContents />
+      <Main />
       <Footer />
     </>
   );
