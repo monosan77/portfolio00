@@ -7,10 +7,10 @@ export function Footer() {
   const [company, setCompany] = useState(""); // 「会社名」の部分
   const [email, setMail] = useState(""); // 「メールアドレス」の部分
   const [message, setMessage] = useState(""); // 「お問い合わせ内容」の部分
-  const userID = "mono.noguyoshi.230876@gmail.com";
-  const serviceID = "service_bwpgcwg";
-  const templateID = "template_kidx7gi";
-  console.log(serviceID);
+
+  const userID = process.env.NEXT_PUBLIC_USER_ID;
+  const serviceID = process.env.NEXT_PUBLIC_SERVICE_ID;
+  const templateID = process.env.NEXT_PUBLIC_TEMPLATE_ID;
 
   const sendMail = () => {
     // ここに処理を書いていきます。
@@ -20,7 +20,7 @@ export function Footer() {
       serviceID !== undefined &&
       templateID !== undefined
     ) {
-      init("mono.noguyoshi.230876@gmail.com");
+      init(userID);
 
       const template_param = {
         name: name,
