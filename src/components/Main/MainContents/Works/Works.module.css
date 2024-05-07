@@ -82,3 +82,10 @@
     opacity: 1;
   }
 }
+
+#swichOn {
+  display: block;
+}
+#swichOff {
+  display: none;
+}

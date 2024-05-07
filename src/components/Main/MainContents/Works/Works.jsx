@@ -2,10 +2,16 @@ import Link from "next/link";
 import React from "react";
 import styles from "./Works.module.css";
 
-export function Works() {
+export function Works(props) {
   return (
-    <div className={styles.contents}>
-      <div className={styles.Works}>
+    <div
+      id={props.onoff === "swichOn" ? styles.switchOn : styles.swichOff}
+      className={styles.contents}
+    >
+      <div
+        id={props.onoff === "swichOn" ? styles.switchOn : styles.swichOff}
+        className={styles.Works}
+      >
         <div className={styles.grid}>
           <div className={styles.app}></div>
           <div className={styles.app}></div>

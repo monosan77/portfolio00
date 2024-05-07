@@ -2,9 +2,14 @@ import React from "react";
 import styles from "./About.module.css";
 import { profileData, skils } from "./AboutData";
 
-export function About() {
+export function About(props) {
+  console.log(props.onoff);
+
   return (
-    <div className={styles.contents}>
+    <div
+      id={props.onoff === "swichOn" ? styles.switchOn : styles.swichOff}
+      className={styles.contents}
+    >
       <div className={styles.About}>
         <div className={styles.Profile}>
           <h2 className={styles.title}>Profile</h2>

@@ -47,3 +47,9 @@
 .right dl dd p {
   margin: 0 5px;
 }
+#swichOn {
+  display: block;
+}
+#swichOff {
+  display: none;
+}

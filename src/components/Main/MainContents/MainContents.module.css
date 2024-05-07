@@ -11,12 +11,24 @@
 .titleArea h1 {
   width: 440px;
   text-align: center;
-  background-color: var(--main-color);
+
   border-top-right-radius: var(--button-radius);
   border-top-left-radius: var(--button-radius);
-}
-.titleArea .active {
-  background-color: var(--background-color);
   border: solid 3px var(--main-color);
   border-bottom: none;
+}
+.titleArea .active {
+  background-color: var(--main-color);
+  border: solid 3px var(--main-color);
+  border-bottom: none;
+}
+.titleArea .close {
+  background-color: var(--background-color);
+  cursor: pointer;
+}
+.swichOn {
+  display: block;
+}
+.swichOff {
+  display: none;
 }
