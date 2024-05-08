@@ -8,14 +8,14 @@ export function Header() {
       <div className={styles.container}>
         <img src="/index-IMG/sydnyc.png" alt="ロゴ" />
         <nav className={styles.navi}>
-          <ul>
+          {/* <ul>
             <li>
               <Link href="/">ABOUT</Link>
             </li>
             <li>
               <Link href="/Works">WORKS</Link>
             </li>
-          </ul>
+          </ul> */}
         </nav>
       </div>
     </header>
