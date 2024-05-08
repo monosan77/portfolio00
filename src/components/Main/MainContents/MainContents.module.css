@@ -2,8 +2,10 @@
   width: 100%;
 }
 .titleArea {
-  width: var(--main-width);
+  width: 100%;
+  max-width: var(--main-width);
   margin: 0 auto;
+  padding: 0 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,7 +13,6 @@
 .titleArea h1 {
   width: 440px;
   text-align: center;
-
   border-top-right-radius: var(--button-radius);
   border-top-left-radius: var(--button-radius);
   border: solid 3px var(--main-color);
@@ -31,4 +32,16 @@
 }
 .swichOff {
   display: none;
+}
+
+@media screen and (max-width: 930px) {
+  .titleArea h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .titleArea h1 {
+    font-size: 1.2rem;
+  }
 }

@@ -3,17 +3,22 @@
   background-color: var(--main-color);
 }
 .Works {
-  width: var(--sub-width);
+  width: 100%;
+  max-width: var(--sub-width);
   margin: 0 auto;
+  padding: 0 15px;
 }
 .grid {
   display: grid;
+
   grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
   margin-bottom: 24px;
 }
 .grid .app {
   width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
   height: 200px;
   background-color: rgb(73, 73, 73);
   cursor: pointer;
@@ -88,4 +93,33 @@
 }
 #swichOff {
   display: none;
+}
+
+@media screen and (max-width: 930px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contents {
+    padding: 48px 0;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .anchor {
+    margin-bottom: 20px;
+  }
+  .anchor img {
+    opacity: 1;
+  }
+  .anchor::after {
+    width: 100%;
+  }
+  .anchor::before {
+    opacity: 1;
+    left: auto;
+    right: -5px;
+  }
 }

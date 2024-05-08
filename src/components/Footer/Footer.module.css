@@ -3,9 +3,10 @@
   color: #fff;
 }
 .contact {
-  width: var(--main-width);
+  width: 100%;
+  max-width: var(--main-width);
   margin: 0 auto;
-  padding: 96px 0;
+  padding: 96px 15px;
 }
 .contact h2 {
   margin-bottom: 40px;
@@ -50,4 +51,28 @@
 }
 .button button {
   padding: 7px 35px;
+}
+
+@media screen and (max-width: 930px) {
+}
+
+@media screen and (max-width: 600px) {
+  .contact {
+    padding: 64px 15px;
+  }
+  .contact h2 {
+    margin-bottom: 24px;
+  }
+  .form {
+    flex-direction: column;
+  }
+  .form label {
+    font-size: 0.85rem;
+  }
+  .left {
+    width: 100%;
+  }
+  .right {
+    width: 100%;
+  }
 }

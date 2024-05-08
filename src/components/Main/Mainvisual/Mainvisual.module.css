@@ -13,8 +13,6 @@
   height: 60px;
 } */
 .image {
-  width: 500px;
-  border-radius: 50%;
   opacity: 0;
   position: absolute;
   top: 50%;
@@ -22,8 +20,21 @@
   transform: translate(-50%, -50%);
   animation: fade 2s linear 2.3s forwards;
 }
-
-.box {
+.image img {
+  border-radius: 50%;
+}
+.image::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: inset 0px 0px 25px 20px #fff;
+}
+/* .box {
   width: 500px;
   height: 500px;
   position: absolute;
@@ -33,7 +44,7 @@
   border-radius: 50%;
   box-shadow: inset 0px 0px 25px 20px #fff;
   z-index: 0;
-}
+} */
 .contena {
   position: relative;
   z-index: 30;
@@ -54,7 +65,7 @@
 
 .textArea {
   position: absolute;
-  bottom: 35%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 30;
@@ -94,5 +105,29 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .image {
+    width: 90%;
+    top: 30%;
+  }
+  .image img {
+    width: 100%;
+  }
+  .contena {
+    width: 100%;
+    padding: 0 15px;
+    top: 75%;
+  }
+  .contena svg {
+    width: 100%;
+  }
+  .textArea {
+    top: 85%;
+  }
+  .textArea p {
+    font-size: 0.85rem;
   }
 }

@@ -3,11 +3,11 @@
   height: 60px;
   border-bottom: solid 1px #333;
   background-color: var(--background-color);
-  position: fixed;
+  /* position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 100;
+  z-index: 100; */
 }
 .container {
   width: 100%;
@@ -49,4 +49,10 @@
 }
 .navi ul li a:hover::after {
   width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 0 5px;
+  }
 }
