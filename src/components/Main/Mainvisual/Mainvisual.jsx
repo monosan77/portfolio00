@@ -8,7 +8,9 @@ export function Mainvisual() {
   return (
     <div className={styles.mainvisual}>
       <div className={styles.container}>
-        <img className={styles.image} src="/index-IMG/mainvisual.png" alt="" />
+        <div className={styles.image}>
+          <img src="/index-IMG/mainvisual.png" alt="" />
+        </div>
         <div className={styles.box}></div>
         <div className={styles.contena}>
           <svg
