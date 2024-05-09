@@ -1,0 +1,132 @@
+.grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 48px;
+}
+
+.app {
+  width: 100%;
+  border-radius: var(--button-radius);
+  background-color: var(--background-color);
+  overflow: hidden;
+  transition: 0.3s;
+  box-shadow: 15px 15px 15px var(--shadow-color);
+}
+.app:hover {
+  transform: scale(1.07);
+}
+
+/* 画像の元サイズは2：1に設定 */
+.image {
+  width: 100%;
+}
+.textArea {
+  padding: 16px;
+}
+.textArea img {
+  width: 15px;
+  height: 15px;
+  margin-left: 8px;
+  opacity: 0;
+}
+.Link a,
+.git a {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.textArea a:hover {
+  color: var(--accent-color);
+}
+.textArea a:hover img {
+  /* opacity: 0; */
+  animation: fade 0.2s linear 0.2s forwards;
+}
+.git {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.Link {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.Link a::after,
+.git a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transition: 0.3s;
+}
+.Link a::before,
+.git a::before {
+  content: "";
+  opacity: 0;
+  width: 7px;
+  height: 7px;
+  border-color: #000 #000 transparent transparent;
+  border-width: 2px;
+  border-style: solid;
+  position: absolute;
+  bottom: -5px;
+  left: 0%;
+  transition: 0.2s;
+  transform: translate(-50%, 50%) rotate(45deg);
+}
+.Link a:hover::after,
+.git a:hover::after {
+  width: 100%;
+}
+.Link a:hover::before,
+.git a:hover::before {
+  left: 100%;
+  opacity: 1;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .Link a,
+  .git a {
+    margin-bottom: 8px;
+  }
+  .textArea img {
+    opacity: 1;
+  }
+  .Link a::after,
+  .git a::after {
+    width: 100%;
+    opacity: 0;
+  }
+  .Link a::before,
+  .git a::before {
+    opacity: 0;
+    left: 100%;
+  }
+}
