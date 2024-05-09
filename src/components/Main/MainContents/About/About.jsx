@@ -3,8 +3,6 @@ import styles from "./About.module.css";
 import { profileData, skils } from "./AboutData";
 
 export function About(props) {
-  console.log(props.onoff);
-
   return (
     <div
       id={props.onoff === "swichOn" ? styles.switchOn : styles.swichOff}

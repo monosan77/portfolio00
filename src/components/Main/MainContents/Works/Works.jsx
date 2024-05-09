@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import styles from "./Works.module.css";
+import { Grid } from "./Grid";
 
 export function Works(props) {
   return (
@@ -12,11 +13,7 @@ export function Works(props) {
         id={props.onoff === "swichOn" ? styles.switchOn : styles.swichOff}
         className={styles.Works}
       >
-        <div className={styles.grid}>
-          <div className={styles.app}></div>
-          <div className={styles.app}></div>
-          <div className={styles.app}></div>
-        </div>
+        <Grid />
         <div className={styles.links}>
           <Link
             className={styles.anchor}
@@ -24,7 +21,7 @@ export function Works(props) {
             target="_blank"
           >
             <p>To Figma </p>
-            <img src="/index-IMG/icons8-外部リンク-48.png" alt="" />
+            <img src="/index-IMG/Link_btn.png" alt="" />
           </Link>
         </div>
         <div className={styles.links}>
@@ -34,7 +31,7 @@ export function Works(props) {
             target="_blank"
           >
             <p>To Github </p>
-            <img src="/index-IMG/icons8-外部リンク-48.png" alt="" />
+            <img src="/index-IMG/Link_btn.png" alt="" />
           </Link>
         </div>
       </div>

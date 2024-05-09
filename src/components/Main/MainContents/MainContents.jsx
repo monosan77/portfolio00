@@ -11,7 +11,7 @@ export function MainContents() {
     setWorks(!works);
     setAbout(about ? false : true);
   };
-  console.log(works);
+
   return (
     <div className={styles.container}>
       <div className={styles.titleArea}>
