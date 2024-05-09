@@ -1,5 +1,6 @@
 .container {
   width: 100%;
+  filter: drop-shadow(15px 15px 5px var(--shadow-color));
 }
 .titleArea {
   width: 100%;
