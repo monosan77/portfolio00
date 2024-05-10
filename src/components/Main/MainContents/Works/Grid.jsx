@@ -11,10 +11,10 @@ export function Grid(props) {
       gitHref: "https://github.com/monosan77/accessoriesHP.git",
     },
     {
-      title: "作成中",
-      image: "./index-IMG/sample.png",
-      href: "",
-      gitHref: "",
+      title: "ハウスメーカーHP",
+      image: "./index-IMG/homeHP.image.png",
+      href: "https://monosan77.com/houseHP/",
+      gitHref: "https://github.com/monosan77/HouseMaker.git",
     },
     {
       title: "作成中",
